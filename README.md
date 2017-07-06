@@ -2,6 +2,7 @@
 login: admin
 password: admin
 
+In project re realised next steps:
 1. Create django project.
 Use some tool to deploy development environment (e.g. virtualenv)
 Create profile app (first name, last name, data of birth, biography,
