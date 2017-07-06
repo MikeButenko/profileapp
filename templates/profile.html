@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            {% load object_tag %}
+            {% if user.is_authenticated %}
+                <h2>Profile</h2>
+                <hr>
+                {% for p in view.profiles %}
+                <p>First name: {{ p.first_name }}</p>
+                <p>Second name: {{ p.last_name }}</p>
+                <p>Date of birth: {{ p.date_of_birth }}</p>
+                <p>Biography: {{ p.biography }}</p>
+                <p>Contacts: {{ p.contacts }}</p>
+                <p>Last changes by: {{ ip_address }}</p>
+                <hr>
+                <a href="{% url 'edit' %}"> EDIT </a>
+                <br>
+                <a href="{% url 'logout' %}"> LOG OUT </a>
+
+            {% endfor %}
+            {% else %}
+                <div class="logger">
+                You are logged out. You can log in
+                <a href="{% url 'login' %}"> hear </a>
+                <br>
+                </div>
+            {% endif %}
+            <br>
+            <div class="container"
+            </div>
+        </div>
+    </body>
+</html>

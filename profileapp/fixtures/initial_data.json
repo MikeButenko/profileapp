@@ -1,0 +1,1 @@
+[{"model": "profileapp.profile", "pk": 1, "fields": {"user": 1, "first_name": "Misha", "last_name": "Bo", "date_of_birth": "1996-05-28", "biography": "Python/Django developer", "contacts": "example@example.com"}}]
