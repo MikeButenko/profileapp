@@ -34,7 +34,7 @@ request.user %}).
 counts.
 
 10. signals - create signal handler, that creates a note in database when
-every model is created/edited/deleted.
+every model is created/edited/deleted.(used django-simple-history)
 
 Bonuses:
 * Unit tests via django
