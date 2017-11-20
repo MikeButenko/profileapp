@@ -1,6 +1,4 @@
 # profileapp
-login: admin
-password: admin
 
 In project re realised next steps:
 1. Create django project.
